@@ -1,0 +1,222 @@
+/* Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+}
+
+body {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container {
+    flex: 1;  
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #6f4e37;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;      /* Center items vertically */
+    padding: 15px 30px;
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo */
+.logo-container {
+    position: absolute;
+    left: 30px;  /* Adjust this value to position the logo from the left edge */
+    top: 50%;    /* Vertically center the logo */
+    transform: translateY(-50%); /* Align the logo vertically */
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation List Styling */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #ffd700;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #6f4e37;
+    list-style: none;
+    min-width: 200px;
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+    white-space: nowrap;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #5a3e2b;
+    color: #ffd700;
+}
+
+/* Buttons */
+.btn {
+    padding: 5px 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #ffd700;
+}
+
+/* Content Styling */
+p.bodyText {
+    padding: 10px;
+}
+
+.welcome {
+    display: flex;
+}
+.welcome > div {
+    flex: 0 0 50%;
+}
+
+.resp-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Section Styling */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #d1a484, #d1a67c); /* Light brown gradient */
+    border-radius: 8px;
+}
+
+/* Image Styling */
+.section-image img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#learning-resources,
+#facilities,
+#outreach,
+#aboutus,
+#students,
+#staff {
+    background: linear-gradient(to bottom, #d1a484, #d1a67c); /* Light brown gradient */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.image-caption-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .featured-image {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  .side-caption {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 500px;
+    font-style: italic;
+    line-height: 1.6;
+  }
